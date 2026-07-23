@@ -80,14 +80,6 @@ module windowsVM 'module/virtual-machines.bicep' = {
     //diagnosticLogAnalyticsWorkspaceId: diagnosticLogAnalyticsWorkspaceId
      }
 }
-
-
-
-
-
-
-
-
 // Create a backup policy
 resource recoveryServicesVault 'Microsoft.RecoveryServices/vaults@2024-10-01' existing = {
   scope: resourceGroup(recoveryServicesVaultResourceGroupName)
